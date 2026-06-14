@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<section id="pc-build">
+  <h2 class="section-title">Fixing PC Journey</h2>
+
+  <div class="building pc">
+    <img 
+      src="c:\Users\S12\Documents\EMMANUEL DAVE BATTAD\images\buildpc.jpg"
+      alt="Building PC"
+      style="
+        width:100%;
+        max-width:600px;
+        border-radius:20px;
+        margin-bottom:20px;
+      "
+    >
+
+    <p>
+      This is my expirience of development PC build.
+      I enjoy assembling hardware, cable management,
+      benchmarking, and optimizing performance.I join here because i want to more technology ,seek new opportunities and develop new skills.
+    </p>
+  </div>
+</section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Emmanuel · dev portfolio & games</title>
+  <!-- Font Awesome 6 (Free Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0b1120;
+      color: #f1f5f9;
+      line-height: 1.5;
+    }
+
+    /* custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1e293b;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #38bdf8;
+      border-radius: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8%;
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      color: #38bdf8;
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 32px;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s ease;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 4px;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px 8% 60px;
+      background: radial-gradient(circle at 10% 30%, rgba(56,189,248,0.08), transparent 70%);
+    }
+
+    .hero h1 {
+      font-size: 4.2rem;
+      font-weight: 800;
+      margin-bottom: 18px;
+      background: linear-gradient(to right, #f1f5f9, #94a3b8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero span {
+      background: linear-gradient(135deg, #38bdf8, #a78bfa);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 1.2rem;
+      margin-bottom: 32px;
+      color: #cbd5e6;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 40px;
+      font-weight: 700;
+      transition: 0.25s;
+      box-shadow: 0 5px 12px rgba(56,189,248,0.3);
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .btn i {
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #7dd3fc;
+      box-shadow: 0 12px 20px rgba(56,189,248,0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #38bdf8;
+      color: #38bdf8;
+      box-shadow: none;
+    }
+
+    .btn-outline:hover {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 48px;
+      letter-spacing: -0.5px;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 4px;
+      background: #38bdf8;
+      margin: 12px auto 0;
+      border-radius: 4px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #111827;
+      padding: 36px 32px;
+      border-radius: 32px;
+      text-align: center;
+      border: 1px solid #1e293b;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+    }
+
+    .about p {
+      font-size: 1.15rem;
+      color: #cbd5e6;
+      margin-bottom: 18px;
+    }
+
+    .skills-mini {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .skills-mini span {
+      background: #1e293b;
+      padding: 6px 14px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #90e0ff;
+      border-left: 2px solid #38bdf8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 28px 24px;
+      border-radius: 28px;
+      transition: 0.25s ease;
+      border: 1px solid #1f2a3e;
+      backdrop-filter: blur(2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #38bdf8;
+      box-shadow: 0 20px 30px -12px rgba(56,189,248,0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 14px;
+      font-size: 1.65rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #e2e8f0;
+    }
+
+    .card h3 i {
+      color: #38bdf8;
+      font-size: 1.6rem;
+    }
+
+    .card p {
+      margin-bottom: 22px;
+      color: #9ca3af;
+      line-height: 1.5;
+    }
+
+    .contact {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      background: #111827;
+      padding: 40px 30px;
+      border-radius: 40px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin: 20px 0;
+      font-size: 1.1rem;
+      background: #1e293b;
+      padding: 12px 20px;
+      border-radius: 60px;
+      transition: 0.2s;
+    }
+
+    .contact-item i {
+      font-size: 1.6rem;
+      color: #38bdf8;
+      width: 32px;
+    }
+
+    .contact-item a {
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-item a:hover {
+      color: #38bdf8;
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #0a0f1c;
+      text-align: center;
+      padding: 28px;
+      border-top: 1px solid #1e293b;
+      color: #7e8aa2;
+      font-size: 0.9rem;
+    }
+
+    /* responsive */
+    @media(max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 14px;
+        padding: 16px 5%;
+      }
+      nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .section-title {
+        font-size: 2rem;
+      }
+      section {
+        padding: 50px 5%;
+      }
+      .card h3 {
+        font-size: 1.4rem;
+      }
+      .contact-item {
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+      }
+    }
+
+    /* resume button special */
+    .card .btn {
+      margin-top: 8px;
+      background: #2563eb;
+    }
+    .demo-badge {
+      display: inline-block;
+      background: #1e293b;
+      font-size: 0.7rem;
+      padding: 4px 8px;
+      border-radius: 30px;
+      margin-left: 10px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><i class="fas fa-code"></i> Emmanuel.dev</div>
+  <ul>
+    <li><a href="#about"><i class="fas fa-user-astronaut"></i> About</a></li>
+    <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+    <li><a href="#games"><i class="fas fa-gamepad"></i> Games</a></li>
+    <li><a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a></li>
+    <li><a href="#contact"><i class="fas fa-paper-plane"></i> Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Hello, I'm <span>Emmanuel</span> 👋</h1>
+  <p>
+    Web Developer, Game enthusiast, and creative problem solver. I craft responsive interfaces,
+    interactive browser games, and modern web apps using HTML5, CSS3, JavaScript & React.
+  </p>
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+    <a href="#projects" class="btn"><i class="fas fa-arrow-down"></i> Explore work</a>
+    <a href="#contact" class="btn btn-outline"><i class="fas fa-comment"></i> Let's talk</a>
+  </div>
+</section>
+
+<!-- About section enriched -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about">
+    <p>
+      I'm Emmanuel Battad — a passionate front-end developer and indie game maker. 
+      I love turning ideas into digital experiences, from minimal portfolios to arcade-style games. 
+      Currently diving deeper into full-stack development and creative coding.
+    </p>
+    <div class="skills-mini">
+      <span>HTML5</span> <span>CSS3</span> <span>JavaScript (ES6)</span> 
+      <span>React</span> <span>Canvas API</span> <span>Tailwind</span> <span>Git</span>
+    </div>
+    <p style="margin-top: 20px; font-style: italic;">
+      ⚡ Outside coding, I enjoy retro gaming, sketching UI concepts, and contributing to open-source.
+    </p>
+  </div>
+</section>
+
+<!-- Resume section (interactive preview) -->
+<div class="card">
+  <h3><i class="fas fa-briefcase"></i> Professional Resume</h3>
+
+  <p>
+    Detailed CV with experience in web development,
+    freelance projects, and game prototypes.
+    Includes skills, education, and freelance achievements.
+  </p>
+
+  <a href="#" id="fakeresumet" class="btn">
+    <i class="fas fa-eye"></i> Quick Preview
+  </a>
+
+  <a href="#" id="downloadFakeResume" class="btn" style="background:#1e293b; margin-left:12px;">
+    <i class="fas fa-download"></i> Download PDF
+  </a>
+
+  <a href="https://canva.link/7o1vrl8op3oj2ci"
+     target="_blank"
+     class="btn"
+     style="background:#0ea5e9; margin-left:12px;">
+     <i class="fas fa-file-alt"></i> View Canva Resume 
+  </a>
+</div>
+
+
+<!-- Games Section with fully functional dynamic demos (simulated but actual links to inline playable demo modals?) 
+     To improve UX, create interactive modals that showcase games inside the portfolio -->
+<section id="games">
+  <h2 class="section-title">Arcade Zone</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><i class="fas fa-gamepad"></i> 🐍 Snake Classic</h3>
+      <p>Retro snake game. Eat food, grow longer, avoid walls & yourself. High score tracking.</p>
+      <button class="btn" id="openSnakeModal"><i class="fas fa-play"></i> Play Snake</button>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-fan"></i> 🐦 Flappy Bird</h3>
+      <p>Tap / Space to fly between pipes. Addictive arcade action with live score.</p>
+      <button class="btn" id="openFlappyModal"><i class="fas fa-play"></i> Play Flappy Bird</button>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-dice-d6"></i> Memory Match</h3>
+      <p>Bonus game: flip cards & match pairs. Train your brain!</p>
+      <button class="btn" id="openMemoryModal"><i class="fas fa-brain"></i> Play Memory</button>
+    </div>
+  </div>
+</section>
+
+<!-- Projects section with more realism -->
+<section id="projects">
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><i class="fas fa-globe"></i> Portfolio 3D</h3>
+      <p>Interactive 3D portfolio concept using Three.js & smooth scroll animations.</p>
+      <a href="#" class="btn" id="projectDemo1"><i class="fab fa-github"></i> GitHub Repo</a>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-robot"></i> AI Chat Widget</h3>
+      <p>Smart assistant frontend with OpenAI mockup, custom UI and dark mode.</p>
+      <a href="#" class="btn" id="projectDemo2"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-chart-line"></i> Dev Metrics Dashboard</h3>
+      <p>Analytics dashboard with Chart.js, realtime data simulation and responsive grids.</p>
+      <a href="#" class="btn" id="projectDemo3"><i class="fas fa-code-branch"></i> Case Study</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2 class="section-title">Let's Connect</h2>
+  <div class="contact">
+    <div class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:emmanuel.dave@devportfolio.com">emmanuel.dave@devportfolio.com</a></div>
+    <div class="contact-item"><i class="fab fa-github"></i> <a href="#" id="githubLink">github.com/emmanuel-creates</a></div>
+    <div class="contact-item"><i class="fab fa-linkedin"></i> <a href="#" id="linkedinLink">linkedin.com/in/emmanuel-battad</a></div>
+    <div class="contact-item"><i class="fab fa-twitter"></i> <a href="#">@emmanuel_codes</a></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Emmanuel Battad — built with <i class="fas fa-heart" style="color:#f43f5e"></i> for creative web & games</p>
+</footer>
+
+<!-- MODAL STRUCTURE (for games) -->
+<div id="gameModal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.9); z-index:2000; align-items:center; justify-content:center; backdrop-filter: blur(4px);">
+  <div style="background:#0f172a; border-radius: 32px; width: 90%; max-width: 700px; max-height: 85vh; overflow: auto; border: 1px solid #38bdf8; box-shadow: 0 20px 35px black; position: relative;">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 18px 22px; border-bottom: 1px solid #1e293b;">
+      <h3 id="modalGameTitle" style="color:#38bdf8;"><i class="fas fa-gamepad"></i> Game</h3>
+      <button id="closeModalBtn" style="background: none; border: none; font-size: 28px; color: white; cursor: pointer;">&times;</button>
+    </div>
+    <div id="modalGameContent" style="padding: 20px; min-height: 400px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+      <!-- dynamic canvas/game content injected -->
+    </div>
+  </div>
+</div>
+
+<script>
+  // ---------- RESUME preview (simple inline info) ----------
+  const resumePreview = document.getElementById('resumePreviewBtn');
+  const fakeDownload = document.getElementById('downloadFakeResume');
+  
+  resumePreview.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert("📄 Emmanuel's Resume Preview\n\n★ Front-End Developer (3 years)\n★ Skills: HTML/CSS/JS, React, Node.js basics\n★ Education: Bachelor's in Computer Science\n★ Featured projects: Portfolio, Snake game, AI dashboard\n★ Contact: emmanuel.dave@devportfolio.com\n\n(Full interactive PDF available on request)");
+  });
+  
+  fakeDownload.addEventListener('click', (e) => {
+    e.preventDefault();
+    const element = document.createElement('a');
+    const content = `Emmanuel Battad - Resume\n\nWeb Developer\nEmail: emmanuel.dave@devportfolio.com\nGithub: github.com/emmanuel-creates\n\nExperience:\n- Freelance front-end dev (2023-present)\n- Game jam participant 2024\n- Built 5+ interactive web games\n\nEducation: BSCS, University of Technology\n\nSkills: JavaScript, React, CSS Grid/Flexbox, Canvas API, Git`;
+    const blob = new Blob([content], {type: 'text/plain'});
+    const url = URL.createObjectURL(blob);
+    element.href = url;
+    element.download = 'Emmanuel_Resume.txt';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+    URL.revokeObjectURL(url);
+  });
+  
+  // projects alert demo links
+  document.getElementById('projectDemo1')?.addEventListener('click', (e) => { e.preventDefault(); alert('🚀 GitHub repo: github.com/emmanuel/3d-portfolio (concept)'); });
+  document.getElementById('projectDemo2')?.addEventListener('click', (e) => { e.preventDefault(); alert('🤖 AI Chat Widget demo — coming soon! interactive mockup ready.'); });
+  document.getElementById('projectDemo3')?.addEventListener('click', (e) => { e.preventDefault(); alert('📊 Dashboard preview: live charts, filters & responsive design. Full prototype available.'); });
+  
+  // modal handling
+  const modal = document.getElementById('gameModal');
+  const modalContentDiv = document.getElementById('modalGameContent');
+  const modalTitle = document.getElementById('modalGameTitle');
+  const closeModal = document.getElementById('closeModalBtn');
+  
+  function openGameModal(title, contentGenerator) {
+    modalTitle.innerHTML = `<i class="fas fa-gamepad"></i> ${title}`;
+    modalContentDiv.innerHTML = '';
+    const gameElement = contentGenerator();
+    modalContentDiv.appendChild(gameElement);
+    modal.style.display = 'flex';
+  }
+  
+  closeModal.addEventListener('click', () => { modal.style.display = 'none'; modalContentDiv.innerHTML = ''; });
+  window.addEventListener('click', (e) => { if(e.target === modal) modal.style.display = 'none'; });
+  
+  // ======================= SNAKE GAME ==========================
+  function buildSnakeGame() {
+    const container = document.createElement('div');
+    container.style.width = '100%';
+    container.style.display = 'flex';
+    container.style.flexDirection = 'column';
+    container.style.alignItems = 'center';
+    container.style.gap = '12px';
+    const canvas = document.createElement('canvas');
+    canvas.width = 400;
+    canvas.height = 400;
+    canvas.style.background = '#0a0f1c';
+    canvas.style.borderRadius = '20px';
+    canvas.style.border = '2px solid #38bdf8';
+    const ctx = canvas.getContext('2d');
+    const scoreSpan = document.createElement('div');
+    scoreSpan.style.fontSize = '1.5rem';
+    scoreSpan.style.fontWeight = 'bold';
+    scoreSpan.style.color = '#38bdf8';
+    scoreSpan.innerText = 'Score: 0';
+    const resetBtn = document.createElement('button');
+    resetBtn.innerText = '🔄 New Game';
+    resetBtn.className = 'btn';
+    resetBtn.style.background = '#1e293b';
+    resetBtn.style.padding = '8px 20px';
+    container.append(canvas, scoreSpan, resetBtn);
+    
+    let snake = [{x:10, y:10}];
+    let direction = 'RIGHT';
+    let nextDirection = 'RIGHT';
+    let food = {x:15, y:10};
+    let score = 0;
+    let gameLoop;
+    let gameActive = true;
+    
+    function generateRandomFood() {
+      const max = 19;
+      let newFood;
+      do {
+        newFood = {x: Math.floor(Math.random() * max), y: Math.floor(Math.random() * max)};
+      } while (snake.some(segment => segment.x === newFood.x && segment.y === newFood.y));
+      return newFood;
+    }
+    
+    function draw() {
+      ctx.clearRect(0,0,400,400);
+      ctx.fillStyle = '#0f172a';
+      ctx.fillRect(0,0,400,400);
+      // draw snake
+      snake.forEach((seg, idx) => {
+        ctx.fillStyle = idx === 0 ? '#38bdf8' : '#7dd3fc';
+        ctx.fillRect(seg.x*20, seg.y*20, 18, 18);
+        ctx.shadowBlur = 0;
+      });
+      ctx.fillStyle = '#facc15';
+      ctx.fillRect(food.x*20, food.y*20, 18, 18);
+    }
+    
+    function update() {
+      if(!gameActive) return;
+      direction = nextDirection;
+      let newHead = {...snake[0]};
+      if(direction === 'RIGHT') newHead.x += 1;
+      if(direction === 'LEFT') newHead.x -= 1;
+      if(direction === 'UP') newHead.y -= 1;
+      if(direction === 'DOWN') newHead.y += 1;
+      
+      // check wall collision
+      if(newHead.x < 0 || newHead.x >= 20 || newHead.y < 0 || newHead.y >= 20) {
+        gameOver(); return;
+      }
+      // self collision
+      if(snake.some(seg => seg.x === newHead.x && seg.y === newHead.y)) {
+        gameOver(); return;
+      }
+      
+      snake.unshift(newHead);
+      if(newHead.x === food.x && newHead.y === food.y) {
+        score++;
+        scoreSpan.innerText = `Score: ${score}`;
+        food = generateRandomFood();
+      } else {
+        snake.pop();
+      }
+      draw();
+    }
+    
+    function gameOver() {
+      if(!gameActive) return;
+      gameActive = false;
+      clearInterval(gameLoop);
+      scoreSpan.innerText = `Game Over! Score: ${score}`;
+      alert(`🐍 Game Over! Your score: ${score}. Press New Game`);
+    }
+    
+    function resetGame() {
+      clearInterval(gameLoop);
+      snake = [{x:10, y:10}];
+      direction = 'RIGHT';
+      nextDirection = 'RIGHT';
+      score = 0;
+      gameActive = true;
+      scoreSpan.innerText = 'Score: 0';
+      food = {x:15, y:10};
+      if(snake.some(seg => seg.x === food.x && seg.y === food.y)) food = generateRandomFood();
+      draw();
+      gameLoop = setInterval(() => { if(gameActive) update(); }, 130);
+    }
+    
+    function handleKey(e) {
+      const key = e.key;
+      if(!gameActive) return;
+      if(key === 'ArrowUp' && direction !== 'DOWN') nextDirection = 'UP';
+      else if(key === 'ArrowDown' && direction !== 'UP') nextDirection = 'DOWN';
+      else if(key === 'ArrowLeft' && direction !== 'RIGHT') nextDirection = 'LEFT';
+      else if(key === 'ArrowRight' && direction !== 'LEFT') nextDirection = 'RIGHT';
+    }
+    window.addEventListener('keydown', handleKey);
+    resetBtn.addEventListener('click', () => { resetGame(); });
+    resetGame();
+    // cleanup on modal close? We'll detach event when modal closes, but for simplicity we keep listener but fine
+    const originalClose = closeModal.onclick;
+    const modalClean = () => { window.removeEventListener('keydown', handleKey); clearInterval(gameLoop); };
+    const observer = new MutationObserver(() => {
+      if(modal.style.display === 'none') modalClean();
+    });
+    observer.observe(modal, {attributes: true, attributeFilter: ['style']});
+    setTimeout(() => draw(), 10);
+    return container;
+  }
+  
+  // ================= FLAPPY BIRD ==================
+  function buildFlappy() {
+    const container = document.createElement('div');
+    const canvas = document.createElement('canvas');
+    canvas.width = 400;
+    canvas.height = 500;
+    canvas.style.background = 'linear-gradient(#0b1120, #1e293b)';
+    canvas.style.borderRadius = '20px';
+    canvas.style.border = '2px solid #38bdf8';
+    const ctx = canvas.getContext('2d');
+    let birdY = 250, velocity = 0, gravity = 0.2;
+    let pipes = [{x: 400, topHeight: 120, gap: 130}];
+    let score = 0, gameActiveFlappy = true;
+    let frame;
+    let scoreSpan = document.createElement('div');
+    scoreSpan.style.fontSize = '1.5rem'; scoreSpan.style.color = '#facc15'; scoreSpan.innerText = 'Score: 0';
+    const resetBtn = document.createElement('button'); resetBtn.innerText = '🕹️ Restart'; resetBtn.className = 'btn';
+    container.append(canvas, scoreSpan, resetBtn);
+    
+    function drawFlappy() {
+      ctx.clearRect(0,0,400,500);
+      ctx.fillStyle = '#0f172a';
+      ctx.fillRect(0,0,400,500);
+      ctx.fillStyle = '#facc15';
+      ctx.fillRect(50, birdY, 30, 25);
+      ctx.fillStyle = '#22c55e';
+      pipes.forEach(pipe => {
+        ctx.fillRect(pipe.x, 0, 50, pipe.topHeight);
+        ctx.fillRect(pipe.x, pipe.topHeight + pipe.gap, 50, 500 - (pipe.topHeight + pipe.gap));
+      });
+      ctx.fillStyle = 'white';
+      ctx.font = 'bold 20px monospace';
+      ctx.fillText(`🏆 ${score}`, 20, 50);
+    }
+    
+    function updateFlappy() {
+      if(!gameActiveFlappy) return;
+      velocity += gravity;
+      birdY += velocity;
+      if(birdY < 0 || birdY + 25 > 500) { gameOverFlappy(); return; }
+      pipes.forEach(pipe => {
+        pipe.x -= 2.5;
+        if(pipe.x + 50 < 0) pipes.shift();
+        if(pipe.x + 50 > 0 && !pipe.passed && pipe.x + 50 < 50) {
+          score++; scoreSpan.innerText = `Score: ${score}`;
+          pipe.passed = true;
+        }
+        if(50+30 > pipe.x && 50 < pipe.x+50 && (birdY < pipe.topHeight || birdY+25 > pipe.topHeight+pipe.gap)) gameOverFlappy();
+      });
+      if(pipes[pipes.length-1]?.x < 280) pipes.push({x: 400, topHeight: Math.random() * 180 + 70, gap: 130, passed: false});
+      drawFlappy();
+    }
+    
+    function gameOverFlappy() {
+      gameActiveFlappy = false;
+      cancelAnimationFrame(frame);
+      alert(`💥 Flappy crash! Score: ${score}`);
+    }
+    function resetFlappy() {
+      gameActiveFlappy = true;
+      birdY = 250; velocity = 0; score = 0; pipes = [{x: 400, topHeight: 120, gap: 130}];
+      scoreSpan.innerText = 'Score: 0';
+      if(frame) cancelAnimationFrame(frame);
+      function animate() { if(gameActiveFlappy) { updateFlappy(); frame = requestAnimationFrame(animate); } }
+      animate();
+    }
+    function jump(e) { if(e.code === 'Space' || e.type === 'click') { if(gameActiveFlappy) velocity = -5; } }
+    window.addEventListener('keydown', jump);
+    canvas.addEventListener('click', jump);
+    resetBtn.addEventListener('click', resetFlappy);
+    resetFlappy();
+    const clearFlappy = () => { cancelAnimationFrame(frame); window.removeEventListener('keydown', jump); };
+    const obs = new MutationObserver(() => { if(modal.style.display === 'none') clearFlappy(); });
+    obs.observe(modal, {attributes: true});
+    return container;
+  }
+  
+  // Memory match bonus game
+  function buildMemoryMatch() {
+    const container = document.createElement('div');
+    container.style.textAlign = 'center';
+    const gridDiv = document.createElement('div');
+    gridDiv.style.display = 'grid';
+    gridDiv.style.gridTemplateColumns = 'repeat(4, 80px)';
+    gridDiv.style.gap = '12px';
+    gridDiv.style.justifyContent = 'center';
+    const symbols = ['🐶','🐱','🐭','🐹','🐰','🦊','🐻','🐼'];
+    let cards = [...symbols, ...symbols].sort(() => Math.random() - 0.5);
+    let flipped = [], matched = [], lock = false;
+    function render() {
+      gridDiv.innerHTML = '';
+      cards.forEach((sym, idx) => {
+        const btnCard = document.createElement('button');
+        btnCard.style.background = matched.includes(idx) ? '#1e293b' : (flipped.includes(idx) ? '#38bdf8' : '#0f172a');
+        btnCard.style.border = '2px solid #38bdf8';
+        btnCard.style.borderRadius = '16px';
+        btnCard.style.fontSize = '2rem';
+        btnCard.style.width = '80px';
+        btnCard.style.height = '80px';
+        btnCard.style.cursor = 'pointer';
+        btnCard.innerText = (flipped.includes(idx) || matched.includes(idx)) ? sym : '?';
+        btnCard.disabled = lock || flipped.includes(idx) || matched.includes(idx);
+        btnCard.onclick = () => handleCard(idx);
+        gridDiv.appendChild(btnCard);
+      });
+    }
+    function handleCard(idx) {
+      if(lock) return;
+      flipped.push(idx);
+      if(flipped.length === 2) {
+        lock = true;
+        setTimeout(() => {
+          if(cards[flipped[0]] === cards[flipped[1]]) matched.push(...flipped);
+          flipped = [];
+          lock = false;
+          if(matched.length === cards.length) alert('🎉 You won! Memory master!');
+          render();
+        }, 600);
+      }
+      render();
+    }
+    render();
+    const resetMem = document.createElement('button'); resetMem.innerText = 'Shuffle & Reset'; resetMem.className = 'btn'; resetMem.style.marginTop = '20px';
+    resetMem.onclick = () => { cards = [...symbols, ...symbols].sort(() => Math.random() - 0.5); flipped = []; matched = []; lock = false; render(); };
+    container.append(gridDiv, resetMem);
+    return container;
+  }
+  
+  document.getElementById('openSnakeModal').addEventListener('click', () => openGameModal('🐍 Snake Classic', buildSnakeGame));
+  document.getElementById('openFlappyModal').addEventListener('click', () => openGameModal('🐦 Flappy Bird', buildFlappy));
+  document.getElementById('openMemoryModal').addEventListener('click', () => openGameModal('🧠 Memory Match', buildMemoryMatch));
+  
+  // smooth social links
+  document.getElementById('githubLink')?.addEventListener('click', (e) => { e.preventDefault(); alert('🔗 github.com/emmanuel-creates — open source projects'); });
+  document.getElementById('linkedinLink')?.addEventListener('click', (e) => { e.preventDefault(); alert('🔗 linkedin: Emmanuel Battad — feel free to connect!'); });
+</script>
+</body>
+</html>
